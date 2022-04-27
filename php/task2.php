@@ -17,6 +17,19 @@ asort($fruits);
 foreach($fruits as $key => $value){
     echo $key." = ".$value."<br>";
 }
-
+// qustion number 5
+$words =  array("abcd","abc","de","hjjj","g","wer");
+$smallest = $words[0];
+$biggest = $words[0];
+for($i = 0;$i < count($words)-1;$i++){
+    if(strlen($words[$i]) >= $biggest){
+       $biggest = $words[$i];
+    }
+    if(strlen($words[$i]) <= $smallest){
+        $smallest = $words[$i];
+    }
+}
+echo $biggest."<br>";
+echo $smallest."<br>";
 
 
